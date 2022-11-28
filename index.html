@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="/js/jquery-3.6.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a0c62e75b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+
+</head>
+
+<body>
+    
+  <h1 id="testH1" >Ici on fait des Tests DIV</h1>
+
+ 
+  <button id="btnOpen" class="button">Magic</button>
+
+  <div id="modal-container">
+    <div class="btnCancelContainer">
+      <button class="btnCancel" id="btnCancel"></button>
+      </div>
+      <div class="modal">
+          <div class="title">
+            <!-- <h6>N'attendez plus</h6> -->
+            <h3>Passez votre commande</h3>
+          </div>
+        <form action="" class="formulaire">
+          <div class="elementChamps" id="elemnomProduit">
+            <div id="entete">
+            <label for="nomProduit" class="labels" id="titleNom">Nom du produit *
+            <div id="emoji">📓</div>
+            </div>
+            </label><br>
+            <input type="text" name="nomProduit" class="champs" id="nomProduit"><br>
+          </div>
+          <div class="elementChamps" id="elemnbProduit">
+            <label for="nbProduit" class="labels">Nombre de produits *</label><br>
+            <input type="number" name="nbProduit" class="champs" id="nbProduit" min="10" max="100" placeholder="Nombre souhaité"><br>
+          </div>
+          <div class="elementChamps" id="elemPrixProduit">
+            <label for="prixProduit" class="labels" >Prix du produit *</label><br>
+            <input type="number" name="prixProduit" class="champs" id="prixProduit" min="10" max="100" placeholder="Prix Demandé"><br>
+          </div>
+          <div class="elementChamps" id="elemColorSelect">
+            <label for="color" class="labels">Couleur souhaitée *</label><br>
+            <select name="color" id="colorSelect" class="selecteur">
+                <option value="">--Couleur--</option>
+                <option value="dog">Bleu</option>
+                <option value="cat">Rouge</option>
+                <option value="hamster">Blanc</option>
+                <option value="parrot">Vert</option>
+                <option value="spider">Corail</option>
+                <option value="goldfish">Noir</option>
+            </select><br>
+          </div>
+          <div class="elementChamps" id="elemTaille">
+            <label for="size" class="labels">Taille *</label><br>
+            <select name="size" id="taille" class="selecteur">
+                <option value="">--Taille--</option>
+                <option value="dog">XS</option>
+                <option value="cat">S</option>
+                <option value="hamster">L</option>
+                <option value="parrot">XL</option>
+                <option value="spider">XXL</option>
+            </select><br>
+          </div>
+          <div class="elementChamps" id="elemDescriptionProduit">
+            <label for="descriptionProduit" class="labels">Personnalisez votre produit 🙂</label><br>
+            <textarea name="descriptionProduit" class="champs" id="descriptionProduit" rows="10" cols="50" placeholder="Dites nous ce qui vous ferait plaisir"></textarea></textarea><br>
+          </div>
+
+          <div id="btnSubContainer">
+          <button type="button" class="btnSub" id="btnSub"> COMMANDER </button>
+          </div>
+          <!-- <div id="btnCancelContainer">
+          <button type="button" class="btnCancel" id="btnCancel">Fermer</button>
+          </div> -->
+        </form>
+      </div>
+    </div>
+
+    <div id="modal-container2">
+      <div class="succes" id="containerSucces">
+        <div class="btnSucces" id="btnSucces"><i id="checkIcon" class="fa-solid fa-check"></i></div>
+        </div>
+        <div class="modal2" id="modal2">
+              <h1>Commande enregistrée !</h1>
+              <p>Consultez vos mails pour confirmer votre réservation,<br><br>A bientôt !</p>
+              <div id="btnSubContainer2">
+                <button type="button" class="btnSub2" id="btnSub2"> DONE </button>
+                </div>
+            </div>
+        </div>
+      </div>
+
+<div id="modal-container3">
+        <div class="modal3" id="modal3">
+              <h1 id="h1test">Vérifiez vos coordonnées</h1>
+              <div class="users" id="users"></div>
+              <div id="btnSubContainer3">
+                <button type="button" class="btnSub3" id="btnSub3"> CONFIRMER </button>
+                </div>
+                <button type="button" class="btnVerifier" id="btnVerifier"> VERIFIER </button>
+            </div>
+  
+
+ 
+
+    
+    <!-- <button class="btnPopup" id="btnPopup">Magic</button> -->
+
+
+    <!-- <div id="form-popup" class="form-popup">
+        <form action="#" id="form-container"class="form-container id="form-container">
+        <h2>Veuillez vous connecter</h2>
+        <label for="email">
+          <strong>E-mail</strong>
+        </label>
+        <input type="text" placeholder="Votre Email" name="email"  />
+        <label for="psw">
+          <strong>Mot de passe</strong>
+        </label>
+        <input type="password" placeholder="Votre mot de passe" name="psw"  />
+        <button type="button" class="btn">Se connecter</button>
+        <button type="button" class="btnCancel" id="btnCancel">Fermer</button>
+      </form>
+    </div> -->
+
+
+
+
+    <script src="js/app.js"></script>
+    <script src="/js/ajax.js"></script>
+
+</body>
+</html>
